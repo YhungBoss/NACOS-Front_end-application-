@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtVista Login</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0ff;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 20px;
+           height: 100vh;
+           border: 3px solid #9932cc;
+           margin-top: 0px;
+
+        }
+
+        .form-section {
+            flex: 1;
+            padding: 40px;
+            padding-top: 25%;
+        }
+
+        .form-section h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        .form-footer {
+            margin-top: 20px;
+        }
+
+        .form-footer a {
+            color: #6c63ff;
+            text-decoration: none;
+            display: flex; 
+            text-align: center;
+            align-items: center;
+        }
+
+        .form-footer button {
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            background-color: #6c63ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 15px 0;
+            color: #888;
+        }
+
+        .divider:before, .divider:after {
+            content: "";
+            display: inline-block;
+            width: 30%;
+            height: 1px;
+            background: #ddd;
+            vertical-align: middle;
+            margin: 0 10px;
+        } 
+    
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-section">
+        <img src="ArtVista Logo.png" alt="Description" style="display: block; margin: 0 auto;" />
+        <h1>ArtVista</h1>
+        <p>Please fill your details to access your account.</p>
+
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ayo.ositunga@example.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="......">
+            </div>
+            <form>
+                <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+
+            <div class="form-footer">
+                <button type="submit">Sign in</button>
+                <div class="divider">or</div>
+                <button onclick="validateForm()" type="button">
+                    <img src="Glogo-removebg-preview.png" alt="Button Image" style="width: 20px; height: auto;">Login with Google
+                </button>
+                <p><a href="Forgot password form.html">Forgot Password?</a></p>
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
